@@ -5,6 +5,7 @@
 *main - prints the last digit and checks if it is positive or negative
 *Return: 0 (success)
 */
+
 int main(void)
 {
 int n;
