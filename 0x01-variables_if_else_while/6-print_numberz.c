@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* main - prints from 0 to 9 
-* Return: 0 (success)
+*main - Prints whether a number is positive, negative or zero
+*Return: 0 (success)
 */
 int main(void)
 {
