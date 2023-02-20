@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * main - prints the hexadecimals in lowercase
 * Return: 0 (success)
