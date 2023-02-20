@@ -1,18 +1,20 @@
 #include <stdio.h>
 /**
-*main-Prints whether a number is positive, negative or zero
-*Return: 0 (success)
-*/
+ * main - prints numbers 0-9 without using char or printf/puts,
+ * and putchar 2x max
+(*
+ * Return: 0 on success
+ */
 int main(void)
 {
-int i;
-for (i = 0; i <= 9; i++)
-{ 
-putchar('0' + i);
-if (i == 9)
-{
-putchar('\n');
+	int i = '0';
+
+	while (i <= '9')
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
-}
-return (0);
-}
+
