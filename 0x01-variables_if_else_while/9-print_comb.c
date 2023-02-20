@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
-* main - prints the comma separated nums
+* main - prints the numbers comma separated
 * Return: 0 (success)
 */
 int main(void)
 {
 int i;
-for (i = '1'; i <= '9'; i++)
+for (i = '0'; i <= '9'; i++)
 {
 putchar(i);
-if(i != '9'){
+if(i != '9')
+{
 putchar(',');
+putchar(' ');
 }
 }
 putchar('\n');
