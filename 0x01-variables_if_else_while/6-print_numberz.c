@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - Prints whether a number is positive, negative or zero
+*main-Prints whether a number is positive, negative or zero
 *Return: 0 (success)
 */
 int main(void)
