@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _islower - tests whether a character is a
- * lowercase letter from the English alphabet.
- * @c: character to test.
- * Return: 1 if it is a lowercase letter, 0 if it is not a lowercase letter.
+ * print_sign - tests whether an int is + or - or 0
+ * numbers.
+ * @n: int to test.
+ * Return: 1 if it +, 0 if it is 0 and -1 if it is -.
  */
 int print_sign(int n)
 {
