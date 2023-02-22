@@ -1,9 +1,10 @@
 #include <unistd.h>
 /**
- *_islower: checks if a char islowercase
- * c: an integer
- * Return: 0 for (lower) and 1 (upper)
-*/
+ * _islower - tests whether a character is a
+ * lowercase letter from the English alphabet.
+ * @c: character to test.
+ * Return: 1 if it is a lowercase letter, 0 if it is not a lowercase letter.
+ */
 int _islower(int c)
 {
 int a_as_int = (int) c;
