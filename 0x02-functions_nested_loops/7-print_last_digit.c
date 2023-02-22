@@ -10,11 +10,11 @@ int p = n % 10;
 if (p < 0) 
 {
 p = p * -1;
-_putchar(p + '0');
+_putchar(p  + '0');
 }
 else
 {
 _putchar(p + '0');
 }
-return(p);
+return (p);
 }
