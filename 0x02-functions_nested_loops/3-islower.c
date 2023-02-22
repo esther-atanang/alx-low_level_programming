@@ -10,7 +10,9 @@ int a_as_int = (int) c;
 if (a_as_int <= 122 && a_as_int >= 97)
 {
 return (1);
-}else{
+}
+else
+{
 return (0);
 }
 }
