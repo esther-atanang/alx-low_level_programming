@@ -21,12 +21,14 @@ if (p < 10)
 {
 _putchar(p + '0');
 _putchar(',');
+_putchar(' ');
 }
 else if (p >= 10 && p != 81)
 {
 _putchar((p / 10) + '0');
 _putchar((p % 10) + '0');
 _putchar(',');
+_putchar(' ');
 }
 }
 }
