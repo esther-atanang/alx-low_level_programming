@@ -1,7 +1,12 @@
 #include "main.h"
-
-void print_line(int n){
-while( n > 0){
+/**
+ * print_line - prints a straight line.
+ * @n: digit.
+ */
+void print_line(int n)
+{
+while (n > 0)
+{
 _putchar('_');
 n = n - 1;
 }
