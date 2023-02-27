@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * reset_to_98 - resets the value to 98
- * @n: pointer to the address of the value 
- * Return: returns nothing
- */
+ * reset_to_98: changes the value in the add passed to 98
+ * @c: the pointer to the address passed
+ * Return : it returns nothing.
+*/
 void reset_to_98(int *n)
 {
 *n = 98;
