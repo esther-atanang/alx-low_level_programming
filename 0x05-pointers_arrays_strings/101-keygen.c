@@ -1,9 +1,11 @@
-#include "main.h"
+#include <stdio.h>
+#include <time.h>
 /**
  * main -
  * Return:
  */
 int main(void)
 {
-	return (0);
+	srand(time(NULL));
+	return rand();
 }
