@@ -1,5 +1,8 @@
 #include <unistd.h>
-
+/**
+ * _putchar - returns a character
+ * Return : the character
+*/
 int _putchar(char c){
-write(1,&c,1);
+return write(1,&c,1);
 }
