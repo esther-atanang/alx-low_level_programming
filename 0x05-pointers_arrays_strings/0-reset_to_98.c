@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * reset_to_98: changes value in the address to 98
+ * the pointer passed points to the address.
  * @n: the pointer to the address passed
  * Return : it returns nothing.
 */
