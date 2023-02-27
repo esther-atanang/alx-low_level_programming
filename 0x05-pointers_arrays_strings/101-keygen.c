@@ -7,7 +7,7 @@
  */
 void randomPassword(int N)
 {
-    // Initialize counter
+    
     int i = 0;
   
     int randomizer = 0;
@@ -15,13 +15,13 @@ void randomPassword(int N)
     
     srand((unsigned int)(time(NULL)));
   
-    // Array of numbers
+    
     char numbers[] = "0123456789";
   
-    // Array of small alphabets
+  
     char letter[] = "abcdefghijklmnoqprstuvwyzx";
   
-    // Array of capital alphabets
+  
     char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
   
     
