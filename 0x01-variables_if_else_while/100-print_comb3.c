@@ -3,7 +3,7 @@
 * main - prints the alphabet backwards
 * Return: 0 (success)
 */
-int main()
+int main(void)
 {
 int i;
 int j;
