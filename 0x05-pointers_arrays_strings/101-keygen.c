@@ -12,17 +12,9 @@ void randomPassword(int N)
   
     int randomizer = 0;
 	char numbers[] = "0123456789";
-  
-  
     char letter[] = "abcdefghijklmnoqprstuvwyzx";
-  
-  
     char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-  
-    
     char symbols[] = "!@#$^&*?";
-  
-    
     char password[N];
   
   
@@ -58,5 +50,5 @@ void randomPassword(int N)
             printf("%c", password[i]);
         }
     }
-	return (0);
+
 }
