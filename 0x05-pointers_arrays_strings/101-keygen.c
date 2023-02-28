@@ -5,17 +5,17 @@
  * main -
  * Return:
  */
-void randomPassword(int N)
+void randomPassword()
 {
     
     int i = 0;
-  
+	int N = 8;
     int randomizer = 0;
 	char numbers[] = "0123456789";
     char letter[] = "abcdefghijklmnoqprstuvwyzx";
     char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
     char symbols[] = "!@#$^&*?";
-    char password[];
+    char password[9];
   
   
     
