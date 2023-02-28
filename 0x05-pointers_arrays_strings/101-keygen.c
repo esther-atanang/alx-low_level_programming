@@ -5,7 +5,7 @@
  * main -
  * Return:
  */
-void randomPassword()
+int main()
 {
     
     int i = 0;
@@ -50,5 +50,5 @@ void randomPassword()
             printf("%c", password[i]);
         }
     }
-
+return (0);
 }
