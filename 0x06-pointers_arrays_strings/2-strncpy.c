@@ -1,5 +1,5 @@
 /**
- * _strncpy - copies a string into another string
+ * _strncpy - copies a string into another
  * @dest: the destination
  * @src: the string that is going to be moved
  * @n: the size you want to be moved
@@ -8,10 +8,9 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
-for
-(i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 dest[i] = src[i];
 }
-return dest;
+return (dest);
 }
