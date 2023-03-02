@@ -1,6 +1,5 @@
 #include "main.h"                                                                                                                       
 #include <stdio.h>                                                                                                                      
-                                                                                                                                        
 /**                                                                                                                                     
  * print_buffer - Prints a buffer 10 bytes at a time, starting with                                                                     
  *                the byte position, then showing the hex content,                                                                      
@@ -10,13 +9,12 @@
  */                                                                                                                                     
 void print_buffer(char *b, int size)                                                                                                    
 {                                                                                                                                       
-        int byte, index;
-        
-        for (byte = 0; byte < size; byte += 10)                                                                                         
-        {                                                                                                                               
-                printf("%08x: ", byte);                                                                                                 
+int byte, index;
+for (byte = 0; byte < size; byte += 10)                                                                                         
+{                                                                                                                               
+printf("%08x: ", byte);                                                                                                 
                                                                                                                                         
-                for (index = 0; index < 10; index++)                                                                                    
+for (index = 0; index < 10; index++)                                                                                    
                 {                                                                                                                       
                         if ((index + byte) >= size)                                                                                     
                                 printf("  ");                                                                                           
@@ -50,4 +48,3 @@ void print_buffer(char *b, int size)
         if (size <= 0)                                                                                                                  
                 printf("\n");                                                                                                           
 }
-
