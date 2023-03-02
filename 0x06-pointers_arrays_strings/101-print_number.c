@@ -9,7 +9,6 @@ void print_number(int n)
 	int res, temp, expo;
 	
 	expo = 1;
-/*Check negatives*/
 	if (n >= 0)
 	{
 		res = n * -1;
@@ -19,8 +18,6 @@ void print_number(int n)
 		res = n;
 		_putchar('-');
 	}
-
-/*Initialize exponent variable*/
 	temp = res;
 	while (temp <= -10)
 	{
@@ -28,7 +25,6 @@ void print_number(int n)
 		temp /= 10;
 		printf("expo: %d, temp: %d, orig: %d\n", expo, temp, res);
 	}
-/*Main */
 	while (expo >= 1)
 	{
 
