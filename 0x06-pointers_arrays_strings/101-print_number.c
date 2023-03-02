@@ -1,30 +1,26 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * print_number - prints a number
- * @n: Input number
- */
+  * print_number - print numbers chars
+  * @n: integer params
+  * Return: 0
+ **/
 
 void print_number(int n)
 {
-	int res, temp, expo;
+	unsigned int n1;
 
-	expo = 1;
-	if (n >= 0)
-		res = n * -1;
-	else
+	n1 = n;
+
+	if (n < 0)
 	{
-		res = n;
 		_putchar('-');
+		n1 = -n;
 	}
-	temp = res;
-	while (temp <= -10)
+
+	if (n1 / 10 != 0)
 	{
-		expo *= 10;
-		temp /= 10;
+		print_number(n1 / 10);
 	}
-	while (expo >= 1)
-	{
-		_putchar(((res / expo) % 10) * -1 + '0');
-		expo /= 10;
-	}
+	_putchar((n1 % 10) + '0');
 }
