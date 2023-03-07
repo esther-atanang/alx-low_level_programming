@@ -1,9 +1,8 @@
 /**
- * _strchr - locates a character in a string
- * @s: pointer to string
- * @c: character to locate
- * Return: pointer to first occurence of character c
- * or NULL if character is not found.
+ * _strspn - gets the length of a prefix substring
+ * @s: segment to compare bytes from
+ * @accept: string of bytes to compare with
+ * Return: number of bytes in segment s which consist of bytes from accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
