@@ -8,12 +8,18 @@
 int main(int argc, char *argv[])
 {
 int i;
-if (argc && argv)
+int num = 0;
+if (argc > 1 && argv)
 {
 for(i = 0; i < argc; i++)
 {
-printf("%d\n", i);
+num = i;
 }
-} 
+printf("%d\n", num);
+}
+else
+{
+printf("%d\n", num);
+}
 return (0);
 }
