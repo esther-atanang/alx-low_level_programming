@@ -6,7 +6,8 @@
  * @argv: simply stores the arguments
  * Return: 0 for success, 1 for failure
 */
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[])
+{
 int c = 0;
 int number;
 if (argc != 2)
