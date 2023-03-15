@@ -29,9 +29,14 @@ while (i <= (len1 + len2))
 {
 if (i < len1 && len1 > 0)
 {
+if (s1 != NULL)
+{
 newStr[i] = s1[i];
 }
+}
 if (i >= len1 && len2 > 0)
+{
+if (s2 != NULL)
 {
 newStr[i] = s2[j];
 j++;
@@ -39,5 +44,6 @@ j++;
 }
 newStr[len1 + len2] = '\0';
 i++;
+}
 return (newStr);
 }
