@@ -4,6 +4,7 @@
  * @str: the string
  * Return: pointer to the new string
 */
+
 char *_strdup(char *str)
 {
 int i = 0;
