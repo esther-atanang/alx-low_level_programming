@@ -24,11 +24,13 @@ len2++;
 }
 }
 newStr = malloc((len1 + len2 + 1) * sizeof(char));
-if(!newStr) return (NULL);
+if (newStr == NULL)
+{
+return (NULL);
+}
 while (i <= (len1 + len2))
 {
-if((len1 + len2) == 1)
-{
+if((len1 + len2) == 1){
 newStr[len1 + len2] = '\0';
 }
 if (i < len1 && len1 > 0)
