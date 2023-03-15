@@ -16,7 +16,7 @@ return (NULL);
 ar = malloc(size * sizeof(char));
 if (ar == NULL)
 {
-return (NULL)
+return (NULL);
 }
 i = 0;
 while (i < size)
