@@ -7,10 +7,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-int len1 = 0;
-int len2 = 0;
-int i = 0;
-int j = 0;
+int len1, len2, i, j = 0;
 char *newStr;
 if (s1 != NULL)
 {
@@ -27,32 +24,9 @@ len2++;
 }
 }
 newStr = malloc((len1 + len2 + 1) * sizeof(char));
-if (newStr == NULL)
-{
-return (NULL);
-}
-while (i <= (len1 + len2))
-{
-if((len1 + len2) == 1){
+if(!newStr) return (NULL);
+for (i = 0; i < len1; i++) newStr[i] = s1[i];
+for (j = 0; j < len2; j++) newStr[i + j] = s2[j];
 newStr[len1 + len2] = '\0';
-}
-if (i < len1 && len1 > 0)
-{
-if(s1 != NULL)
-{
-newStr[i] = s1[i];
-}
-}
-if (i >= len1 && len2 > 0)
-{
-if (s2 != NULL)
-{
-newStr[i] = s2[j];
-j++;
-}
-}
-newStr[len1 + len2] = '\0';
-i++;
-}
 return (newStr);
 }
