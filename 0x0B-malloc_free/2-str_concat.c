@@ -12,10 +12,9 @@ int len2 = 0;
 int i = 0;
 int j = 0;
 char *newStr;
-if (s1 != NULL){
-while (s1[len1] != '\0')
-    len1++;
-}
+if (s1 != NULL)
+    while (s1[len1] != '\0')
+        len1++;
 if(s2 != NULL)
 {
 while (s2[len2] != '\0')
