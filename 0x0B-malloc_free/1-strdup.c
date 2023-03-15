@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * _strdup - returns a pointer to a new string which is a duplicate of the string
+ * _strdup - returns a pointer to a new string
  * @str: the string
  * Return: pointer to the new string
 */
@@ -11,7 +11,7 @@ int j;
 char *newStr;
 if (str == NULL)
 {
- return (NULL);
+return (NULL);
 }
 while (str[i] != '\0')
 {
