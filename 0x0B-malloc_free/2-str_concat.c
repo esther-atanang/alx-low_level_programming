@@ -15,7 +15,7 @@ char *newStr;
 if (s1 != NULL)
 while (s1[len1] != '\0')
 len1++;
-if(s2 != NULL)
+if (s2 != NULL)
 while (s2[len2] != '\0')
 {
 len2++;
@@ -25,16 +25,11 @@ if (newStr == NULL)
 return (NULL);
 while (i <= (len1 + len2))
 {
-if((len1 + len2) == 1){
+if ((len1 + len2) == 1)
 newStr[len1 + len2] = '\0';
-}
 if (i < len1 && len1 > 0)
-{
 if(s1 != NULL)
-{
 newStr[i] = s1[i];
-}
-}
 if (i >= len1 && len2 > 0)
 {
 if (s2 != NULL)
