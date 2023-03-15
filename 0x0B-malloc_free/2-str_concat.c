@@ -14,10 +14,12 @@ int j = 0;
 char *newStr;
 if( s1 == NULL)
 {
+s1[0] = '\0';
 len1++;
 }
 if( s2 == NULL)
 {
+s2[0] = '\0';
 len2++;
 }
 while (s1[len1] != '\0')
@@ -35,10 +37,6 @@ return (NULL);
 }
 while (i <= (len1 + len2))
 {
-if(s1 == NULL || s2 == NULL)
-{
-    newStr[i] = "";
-}
 if (i < len1 && len1 > 0){
 newStr[i] = s1[i];
 }
