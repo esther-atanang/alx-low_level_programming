@@ -20,31 +20,29 @@ while (s2[len2] != '\0')
 {
 len2++;
 }
-newStr = malloc((len1 + len2 + 1) * sizeof(char));
+newStr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 if (newStr == NULL)
 {
 return (NULL);
 }
 while (i <= (len1 + len2))
 {
-if (i < len1 && len1 > 0){
-if(s1 != NULL)
+if (i < len1 && len1 > 0)
+{
+if (s1 != NULL)
 {
 newStr[i] = s1[i];
 }
 }
 if (i >= len1 && len2 > 0)
 {
-if(s2 != NULL){
+if (s2 != NULL)
+{
 newStr[i] = s2[j];
 j++;
 }
 }
-if (i == (len1 + len2))
-{
-newStr[i] = '\0';
-}
-i++;
+newStr[len1 + len2] = '\0';
 }
 return (newStr);
 }
