@@ -17,10 +17,6 @@ while (str[i] != '\0')
 {
 i++;
 }
-if (i == 0)
-{
-return (NULL);
-}
 newStr = malloc((i + 1) * sizeof(char));
 if (newStr == NULL)
 {
