@@ -12,21 +12,11 @@ int len2 = 0;
 int i = 0;
 int j = 0;
 char *newStr;
-if( s1 == NULL)
-{
-s1[0] = '\0';
-len1++;
-}
-if( s2 == NULL)
-{
-s2[0] = '\0';
-len2++;
-}
-while (s1[len1] != '\0')
+while (s1[len1] != '\0' && s1 != NULL)
 {
 len1++;
 }
-while (s2[len2] != '\0')
+while (s2[len2] != '\0' && s2 != NULL)
 {
 len2++;
 }
@@ -38,12 +28,17 @@ return (NULL);
 while (i <= (len1 + len2))
 {
 if (i < len1 && len1 > 0){
+if(s1 != NULL)
+{
 newStr[i] = s1[i];
+}
 }
 if (i >= len1 && len2 > 0)
 {
+if(s2 != NULL){
 newStr[i] = s2[j];
 j++;
+}
 }
 if (i == (len1 + len2))
 {

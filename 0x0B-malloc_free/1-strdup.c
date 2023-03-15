@@ -4,7 +4,6 @@
  * @str: the string
  * Return: pointer to the new string
 */
-
 char *_strdup(char *str)
 {
 int i = 0;
@@ -18,6 +17,7 @@ while (str[i] != '\0')
 {
 i++;
 }
+
 newStr = malloc((i + 1) * sizeof(char));
 if (newStr == NULL)
 {
