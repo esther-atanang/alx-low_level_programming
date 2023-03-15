@@ -27,16 +27,16 @@ return (NULL);
 }
 while (i <= (len1 + len2))
 {
-if (i < len1 && len1 > 0)
-{
 if (s1 != NULL)
+{
+if (i < len1 && len1 > 0)
 {
 newStr[i] = s1[i];
 }
 }
-if (i >= len1 && len2 > 0)
+if( s2 != NULL)
 {
-if (s2 != NULL)
+if (i >= len1 && len2 > 0)
 {
 newStr[i] = s2[j];
 j++;
