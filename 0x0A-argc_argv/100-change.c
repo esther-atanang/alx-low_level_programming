@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - Entry point
  * @argc: The number of command-line arguments
@@ -10,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-    int number, c = 0;
+int number, c = 0;
 
     if (argc != 2)
     {
