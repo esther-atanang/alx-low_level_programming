@@ -12,11 +12,11 @@ int len2 = 0;
 int i = 0;
 int j = 0;
 char *newStr;
-while (s1[len1] != '\0' && s1 != NULL)
+while (s1[len1] != '\0')
 {
 len1++;
 }
-while (s2[len2] != '\0' && s2 != NULL)
+while (s2[len2] != '\0')
 {
 len2++;
 }
