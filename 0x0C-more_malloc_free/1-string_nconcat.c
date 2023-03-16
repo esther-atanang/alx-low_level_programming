@@ -28,7 +28,7 @@ return (NULL);
 size = i + n;
 while (k <= size)
 {
-if ( k < n && s1 != NULL) 
+if ( k < i && s1 != NULL) 
 {
 newstr[k] = s1[k];
 }
