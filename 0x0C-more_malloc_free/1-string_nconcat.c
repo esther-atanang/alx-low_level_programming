@@ -20,7 +20,6 @@ while (s1[i] != '\0')
 i++;
 }
 }
-
 newstr = malloc((i + n + 1)*sizeof(char));
 if (newstr == NULL)
 {
