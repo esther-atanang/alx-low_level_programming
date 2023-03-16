@@ -2,7 +2,6 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int i = 0;
-int j = 0;
 int p = 0;
 unsigned int k = 0;
 unsigned int size;
