@@ -26,7 +26,7 @@ if (newstr == NULL)
 return (NULL);
 }
 size = i + n;
-while (k <= size)
+while (k < size)
 {
 if (k < i && s1 != NULL) 
 {
@@ -37,8 +37,8 @@ if (k >= i && s2 != NULL)
 newstr[k] = s2[p];
 p++;
 }
-newstr[size] = '\0';
 k++;
 }
+newstr[size] = '\0';
 return (newstr);
 }
