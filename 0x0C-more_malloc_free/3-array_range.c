@@ -3,6 +3,7 @@
 int *array_range(int min, int max)
 {
 int *ptr;
+int i = 0;
 if(min > max)
 {
  exit(1);
@@ -11,6 +12,12 @@ ptr = malloc(max * sizeof(int));
 if(ptr == NULL)
 {
 return NULL;
+}
+while(i < max)
+{
+    ptr[i] = min;
+    i++;
+    min++;
 }
 return ptr;
 }
