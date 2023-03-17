@@ -1,21 +1,16 @@
 #include <stdlib.h>
+#include <stdio.h>
 int *array_range(int min, int max)
 {
-int i = 0;
 int *ptr;
 if(min > max)
 {
-return NULL;
+ exit(1);
 }
 ptr = malloc(max * sizeof(int));
-if(ptr == NULL){
+if(ptr == NULL)
+{
 return NULL;
 }
-while(i < max)
-{
-    ptr[i] = min;
-    min++;
-    i++;
-}
-return (ptr);
+return ptr;
 }
