@@ -39,11 +39,7 @@ void simple_print_buffer(int *buffer, unsigned int size)
 int main(void)
 {
     int *a;
-    a = array_range(1, 10);
-    if(a == NULL)
-    {
-      return(1);
-    }
+    a = array_range(20, 10);
     simple_print_buffer(a, 11);
     free(a);
     return (0);
