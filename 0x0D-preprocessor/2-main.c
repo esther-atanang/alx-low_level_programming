@@ -1,8 +1,7 @@
 #include <stdio.h>
-#define __FILE__
 
 int main()
 {
-printf("%s",__FILE_defined);
+printf("%s",__FILE__);
 return(0);
 }
