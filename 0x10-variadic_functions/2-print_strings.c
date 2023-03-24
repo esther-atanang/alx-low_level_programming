@@ -15,7 +15,7 @@ va_start(args, n);
 for (counter = 0; counter < n; counter++)
 {
 word = (char *)va_arg(args, char *);
-if(word == NULL)
+if (word == NULL)
 {
 printf("(nil)");
 }
@@ -29,4 +29,5 @@ printf("%s", separator);
 }
 }
 printf("\n");
+va_end(args);
 }
