@@ -17,7 +17,7 @@ for (counter = 0; counter < n; counter++)
 word = (char *)va_arg(args, char *);
 if(word == NULL)
 {
-printf("nil");
+printf("(nil)");
 }
 else
 {
