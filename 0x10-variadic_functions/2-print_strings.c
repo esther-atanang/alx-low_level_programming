@@ -7,7 +7,7 @@ va_list(args);
 va_start(args, n);
 for(counter = 0; counter < n; counter++)
 {
-printf("%d\n", va_arg(args, int));
+printf("%s", va_arg(args(args, counter));
 if(separator && n != 0)
 {
 printf("%s", separator);
