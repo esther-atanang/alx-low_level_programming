@@ -18,7 +18,7 @@ if (separator && counter != (n-1))
 {
 printf("%s", separator);
 }
-else
+else if(!(separator) && counter != (n-1))
 {
 printf("nil");
 }
