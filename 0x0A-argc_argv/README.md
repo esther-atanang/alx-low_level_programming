@@ -1,1 +1,1 @@
-Passing arguments in main functions
+My main function can have arguments
