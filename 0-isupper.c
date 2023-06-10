@@ -1,18 +1,20 @@
 #include "main.h"
 /**
- * _isupper - checks for if a character is in uppercase
- * character in the alphabet
- * Return: (1) for upper and (0) for lower
+ * _memset - fill a block of memory with a specific value
+ * @s: starting address of memory to be filled
+ * @b: the desired value
+ * @n: number of bytes to be changed
+ *
+ * Return: changed array with new value for n bytes
  */
-int _isupper(int c)
+char *_memset(char *s, char b, unsigned int n)
 {
-    int c_as_int = (int)c;
-    if ((c_as_int <= 90) && (c_as_int >= 65))
+    int i = 0;
+
+    for (; n > 0; i++)
     {
-        return (1);
+        s[i] = b;
+        n--;
     }
-    else
-    {
-        return (0);
-    }
+    return (s);
 }
