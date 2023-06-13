@@ -7,7 +7,7 @@
  */
 int main(int argc, char **argv)
 {
-(void)argv; // Unused variable
-printf("%d\n", (argc - 1)); // Print the number of arguments passed
-return (0);
+    (void)argv;                 // Unused variable
+    printf("%d\n", (argc - 1)); // Print the number of arguments passed
+    return (0);
 }
