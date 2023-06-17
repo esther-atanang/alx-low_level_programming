@@ -1,22 +1,22 @@
+#include <stdio.h>
 #include <stdlib.h>
-/**
- * _calloc - alocates memory for a array
- * @nmemb: amount of element
- * @size: sixe of the data type
- * Return: the pointer
-*/
-void *_calloc(unsigned int nmemb, unsigned int size)
+
+void *memeset(void *ptr, int value, size_t num)
 {
-void *ptr;
-int i = 0;
-if (nmemb == 0 || size == 0)
-{
-return (NULL);
+    unsigned long i;
+    int *p = ptr;
+    for (i = 0; i < num; i++)
+    {
+        *p = value;
+        p++;
+    }
+    return ptr;
 }
-ptr = malloc(nmemb * size);
-if (ptr == NULL)
-{
-return (NULL);
+
+void *_calloc(unsigned int nmemb, unsigned int size){
+void *ptr = malloc(size * nmemb);
+if( ptr != NULL){
+    memeset(ptr,0,size);
 }
-return (ptr);
+return ptr;
 }
