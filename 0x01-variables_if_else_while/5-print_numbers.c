@@ -6,11 +6,13 @@
 int main(void)
 {
 int i;
-char ch[] = "0123456789\n";
-for (i = 0; i <= 10; i++)
+for(i=0;i<10;i++)
 {
-int p = ch[i];
-putchar(p);
+printf("%d",i);
+if(i==9)
+{
+printf("\n");
+}
 }
 return (0);
 }

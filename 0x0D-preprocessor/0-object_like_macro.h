@@ -1,8 +1,6 @@
 /**
- * SIZE - a buffer
- * Return: a buffer size
-*/
-#ifndef SIZE_H
-#define SIZE_H
+ * SIZE: defines the size of a data
+ */
+#ifndef SIZE
 #define SIZE 1024
 #endif

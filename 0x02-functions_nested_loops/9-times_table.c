@@ -1,36 +1,45 @@
+#include <stdio.h>
 #include "main.h"
-/**
- * times_table - prints 9 times table 
- * Return: the sum of two numbers.
- */
+void printNumbers(int a);
+
 void times_table(void)
-{
-int i, j;
-for (i = 0; i < 10; i++)
-{
-_putchar('\n');
-for (j = 0; j < 10; j++)
-{
-int p = i * j;
-if (p == 81)
-{
-_putchar('8');
-_putchar((p % 10) + '0');
+{ 
+    printNumbers(1);
+    // int i;
+    // for(i=45; i < 51; i++)
+    // {
+    //     printNumbers(i);
+    //     _putchar(',');
+    // }
+    // int i;
+    // int j = 1;
+    // int number;
+    // number = 0;
+    // while(number < 10){
+    //     for (i = 0; i < 10; i++)
+    //     {
+    //         j = number * i;
+    //         printNumbers(j);
+    //         if(i < 9){
+    //             _putchar(',');
+    //         }
+    //     }
+    //     printf("\n");
+    //     number++;
+    }
+
+        
 }
-if (p < 10)
+void printNumbers(int a)
 {
-_putchar(p + '0');
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
-else if (p >= 10 && p != 81)
-{
-_putchar((p / 10) + '0');
-_putchar((p % 10) + '0');
-_putchar(',');
-_putchar(' ');
-}
-}
-}
+    int wholeNumber;
+    int lastNumber;
+    if(a > 9){
+     wholeNumber = a / 10;
+     lastNumber = a % 10;
+    _putchar(wholeNumber + '0');
+    _putchar(lastNumber + '0');
+    }else{
+      _putchar(a);
+    }
 }
