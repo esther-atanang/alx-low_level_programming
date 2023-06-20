@@ -4,12 +4,6 @@
 /**
  * print_dog - Prints the information of a dog
  * @d: Pointer to the dog structure
- *
- * Description: This function prints the name, age, and owner of the dog.
- *              If any of the fields are NULL, it prints "(nil)" instead.
- *              If the age is not positive, it prints "(nil)" for the age field.
- *
- * Return: Nothing
  */
 void print_dog(struct dog *d)
 {
@@ -29,5 +23,8 @@ void print_dog(struct dog *d)
                    "(nil)",
                    (d->owner != NULL) ? d->owner : "(nil)");
         }
+    }else{
+        return;
     }
 }
+

@@ -6,7 +6,6 @@
  * @name: pointer to the name of the dog
  * @ge: age of the dog in float
  * @owner: pointer to the name of thr owner
- * Return: Nothing
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
