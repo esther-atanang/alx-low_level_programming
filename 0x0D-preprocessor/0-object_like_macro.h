@@ -1,6 +1,6 @@
-/**
- * SIZE: defines the size of a data
- */
-#ifndef SIZE
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
+
 #define SIZE 1024
+
 #endif
