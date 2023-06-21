@@ -18,8 +18,6 @@ dog->owner = owner;
 }
 else
 {
-free(dog->name);
-free(dog->owner);
 free(dog);
 return (NULL);
 }
