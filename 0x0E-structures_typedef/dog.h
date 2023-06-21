@@ -11,10 +11,11 @@
  * including its name, age, and owner.
  */
 
-typedef struct dog{
-    char *name;
-    float age;
-    char *owner;
+typedef struct dog
+{
+char *name;
+float age;
+char *owner;
 } dog_t;
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
