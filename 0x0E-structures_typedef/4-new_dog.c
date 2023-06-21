@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "dog.h"
-#include "main.h"
 /**
  * new_dog - creates a new dog
  * @name: pointer to the name of the dog
@@ -9,17 +8,20 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t *dog;
-    dog = malloc(sizeof(dog_t));
-    if (dog != NULL)
-    {
-        dog->name = name;
-        dog->age = age;
-        dog->owner = owner;
-    }
-    else
-    {
-        return (NULL);
-    }
-    return (dog);
+dog_t *dog;
+dog = malloc(sizeof(dog_t));
+if (dog != NULL)
+{
+dog->name = name;
+dog->age = age;
+dog->owner = owner;
+}
+else
+{
+free(dog->name); // Free the allocated memory for the name string
+free(dog->owner);
+free(dog);
+return (NULL);
+}
+return (dog);
 }
