@@ -23,8 +23,9 @@ void print_dog(struct dog *d)
                    "(nil)",
                    (d->owner != NULL) ? d->owner : "(nil)");
         }
-    }else{
+    }
+    else
+    {
         return;
     }
 }
-
