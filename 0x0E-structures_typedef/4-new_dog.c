@@ -18,7 +18,7 @@ dog->owner = owner;
 }
 else
 {
-free(dog->name); // Free the allocated memory for the name string
+free(dog->name);
 free(dog->owner);
 free(dog);
 return (NULL);
