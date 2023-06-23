@@ -3,7 +3,7 @@
  * @array: Pointer to the array
  * @size: The size of the array
  * @cmp: Pointer to the comparison function
- *
+ * Return: -1 for Error any other value for success
  * Description: This function searches for an integer in the given array
  * by applying the comparison function to each element.
  * It returns the index of the first element for which the
@@ -15,16 +15,18 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 int i;
 int returnValue;
-if(size <= 0)
+if (size <= 0)
 {
 return (-1);
 }
-for(i = 0; i < size; i++)
+if (array && cmp){
+for (i = 0; i < size; i++)
 {
 returnValue = cmp(array[i]);
-if(returnValue > 0)
+if (returnValue > 0)
 {
 return (i);
+}
 }
 }
 return (-1);
