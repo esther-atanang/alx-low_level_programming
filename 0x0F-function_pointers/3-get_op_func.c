@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdlib.h>
 int (*get_op_func(char *s))(int, int)
 {
@@ -12,10 +12,11 @@ int (*get_op_func(char *s))(int, int)
     int i;
     while(i < 6)
     {
-        if(ops[i][i] == s)
+        if(custom_strcmp(ops[i].op, s))
         {
-            return (ops[i][(i + 1)]);
+            return (ops[i].f);
         }
+        i++;
     }
     return (NULL);
 }
